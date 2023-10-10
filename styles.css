@@ -144,11 +144,27 @@ main {
 
 /* Contact form */
 .contact-form {
+    flex-grow: 1;
     padding: 28px 32px;
 }
 
 .form-row {
     display: flex;
+    column-gap: 32px;
+    margin-top: 30px;
+}
+
+.form-group {
+    flex-grow: 1;
+    /* padding-right: 32px; */
+}
+
+.form-group:focus-within .form-label {
+    color: #5826e0;
+}
+
+.form-group:focus-within .form-input {
+    border-color: #5826e0;
 }
 
 .form-label,
@@ -163,10 +179,16 @@ main {
 }
 
 .form-input {
+    width: 100%;
     outline: none;
     border: none;
     border-bottom: 2px solid #dddde7;
     padding: 8px 0 14px;
+    color: #282839;
+}
+
+.form-input::placeholder {
+    color: #a6a7c0;
 }
 
 .form-error {
