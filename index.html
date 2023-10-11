@@ -71,6 +71,7 @@
                 <!-- Contact form -->
                 <div class="contact-form">
                     <form action="" autocomplete="off">
+                        <!-- Text input row 1 -->
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="first-name" class="form-label">First Name</label>
@@ -85,6 +86,7 @@
                             </div>
                         </div>
 
+                        <!-- Text input row 1 -->
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="mail" class="form-label">Mail</label>
@@ -100,6 +102,7 @@
                             </div>
                         </div>
 
+                        <!-- Radio input row -->
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="" class="form-label form-label--large">
@@ -133,10 +136,31 @@
                                 </p>
                             </div>
                         </div>
+
+                        <!-- Text area -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea name="message" id="message" class="form-textarea"
+                                    placeholder="Write your message..." oninput="onResize(this)"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-row submit-box">
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </main>
+
+        <script>
+            function onResize(e) {
+                e.style.height = 'auto';
+                e.style.height = e.scrollHeight + 2 + 'px';
+            }
+        </script>
     </body>
 
 </html>
