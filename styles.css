@@ -295,6 +295,7 @@ main {
     border-radius: 8px;
     font-weight: 600;
     font-size: 1.3rem;
+    line-height: 3.85;
 }
 
 .submit-btn:hover {

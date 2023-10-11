@@ -94,7 +94,7 @@
                             <div class="form-group">
                                 <label for="mail" class="form-label">Mail</label>
                                 <input type="email" name="email" id="mail" class="form-input" placeholder="Enter email"
-                                    required pattern="^[A-Za-z0-9._%+-]+@([A-Za-z]{2,}\.)+[A-Za-z]{2,}$">
+                                    pattern="^[A-Za-z0-9._%+-]+\@([A-Za-z]{2,}\.)+[A-Za-z]{2,}$" required>
                                 <p class="form-error">Input exactly email format.</p>
                             </div>
 
@@ -115,7 +115,8 @@
 
                                 <div class="radio-group">
                                     <div class="radio-btn">
-                                        <input type="radio" name="type" id="web-design" value="web-design" required>
+                                        <input type="radio" name="type" id="web-design" value="web-design" required
+                                            checked>
                                         <label for="web-design">Web Design</label>
                                     </div>
 
